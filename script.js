@@ -6,11 +6,12 @@ class Question {
 }
 
 const questions = [
-    new Question('Which is not a JavaScript Data Type?', ['Number', 'String', 'Null', 'Boolean', 'Object']),
+    new Question('Which is not a JavaScript Data Type?', ['Number', 'String', 'Attribute', 'Boolean', 'Object']),
     new Question('Which symbol is used for single line comments in Javascript?', ['//', '/*', '#', 'REM']),
-    new Question('Which of these is NOT a looping structure?', ['For', 'While', 'Sure', 'Do-While']),
-    new Question('Which is NOT a type of Pop up box available in JavaScript?', ['Alert', 'Confirm', 'Bop', 'Prompt']),
+    new Question('Which of these is NOT a looping structure?', ['For', 'While', 'At', 'Do-While']),
+    new Question('Which is NOT a type of Pop up box available in JavaScript?', ['Alert', 'Confirm', 'Command', 'Prompt']),
 ]
+
 
 let currentIndex = 0;
 
@@ -33,6 +34,11 @@ function switchQuestion() {
     })
 }
 
+
+let count = 60, timer = setInterval(function() {
+    $("#countdown").html(count--);
+    if(count <- 0) clearInterval(timer);
+}, 1000);
 
 
 $(document).ready(
