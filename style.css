@@ -14,10 +14,8 @@ body {
     font-size: 20px;
 }
 
-element {
-    top: 200px;
-    font-size: 20px;
-    text-align: center;
+
+#countdown{
+    display: flex;
     justify-content: center;
-    color: rgb(63, 46, 95);
 }
